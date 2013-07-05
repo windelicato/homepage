@@ -1,0 +1,13 @@
+@font-face {
+        font-family: 'Drift';
+        src: url('../fonts/drift.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+}
+
+body {
+	background-color: #111111;
+	color: #D3D3D3;
+	font-family: 'Drift';
+	font-size: 10;
+}	
