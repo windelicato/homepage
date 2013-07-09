@@ -4,13 +4,65 @@
                 <title>bill indelicato</title>
                 <link rel="stylesheet" type="text/css" href="css/style.css"/>
                 <script type="text/javascript" src="js/jquery-1.8.1.min.js"></script>
+                <script type="text/javascript" src="js/jquery-terminal.min.js"></script>
+                <script type="text/javascript" src="js/jquery-ui-1.10.3.custom.min.js"></script>
+                <link rel="stylesheet" type="text/css" href="js/jquery-terminal.css"/>
+                <link rel="stylesheet" type="text/css" href="js/jquery-ui-1.10.3.custom.min.css"/>
                 <script type="text/javascript">
-		
+	
+			$(document).ready(function() {
+
+				$('#term').terminal(function(command,term) {
+					if(command == 'test') {
+						term.echo("you typed test");
+					} else if(command == 'about') {
+						term.echo("I'm a computer engineer based out of New York City\n   with an electrical engineering background. This \n   is supplemented by an interest in UI design and \n   an extensive music career as a bassist. ");
+					} else if(command == 'help') {
+						term.echo("clear   help   about   contact   links ");
+					} else {
+						term.echo("unknown command");
+					}
+						
+				}, {
+					prompt: '» ', 
+					name:'urxvt', 
+					height:'300px',
+					width:'400px',
+					greetings:greeter
+					});
+
+				function greeter() {
+					return "Type help for list of commands ... "
+				}
+
+				function updateClock(){
+					var currentTime = new Date();
+					var currentHours = currentTime.getHours ( );
+					var currentMinutes = currentTime.getMinutes ( );
+					var currentSeconds = currentTime.getSeconds ( );
+					currentMinutes = ( currentMinutes < 10 ? "0" : "" ) + currentMinutes;
+					currentSeconds = ( currentSeconds < 10 ? "0" : "" ) + currentSeconds;
+					var timeOfDay = ( currentHours < 12 ) ? "AM" : "PM";
+					currentHours = ( currentHours > 12 ) ? currentHours - 12 : currentHours;
+					currentHours = ( currentHours == 0 ) ? 12 : currentHours;
+					var currentTimeString = currentHours + ":" + currentMinutes + ":" + currentSeconds + " " + timeOfDay;
+					document.getElementById("clock").firstChild.nodeValue = currentTimeString;
+				} setInterval(updateClock, 100);
+
+				$('.floating').draggable().resizable();
+			});
 		</script>
 	</head>
 	<body>
-		Under construction
+		<div id="bar"> <span id="clock">&#160;</div></div>
+		<div id="term" class="floating"></div>
+		<div id="nametag" class="floating" style="font-family:monospace, fixed; font-weight: bold">
+			<div style="font-family: monospace, fixed; font-size: 12px; font-weight: bold;">
+			<span style="">&#9612;&#160;&#160;&#9623;&#9628;&#9628;&#160;&#160;&#9623;&#160;&#160;&#160;&#160;&#160;&#160;&#9612;&#160;&#160;&#160;&#9628;&#160;&#9623;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9616;&#160;&#160;&#160;&#160;&#160;</span><br />
+			<span style="">&#9627;&#9600;&#9622;&#9604;&#9616;&#9616;&#160;&#160;&#9604;&#160;&#9627;&#9600;&#9622;&#9630;&#9600;&#9612;&#9630;&#9600;&#9622;&#9616;&#160;&#9604;&#160;&#9630;&#9600;&#9622;&#9629;&#9600;&#9622;&#9628;&#9600;&#160;&#9630;&#9600;&#9622;</span><br />
+			<span style="">&#9612;&#160;&#9612;&#9616;&#9616;&#9616;&#160;&#160;&#9616;&#160;&#9612;&#160;&#9612;&#9612;&#160;&#9612;&#9627;&#9600;&#160;&#9616;&#160;&#9616;&#160;&#9612;&#160;&#9622;&#9630;&#9600;&#9612;&#9616;&#160;&#9622;&#9612;&#160;&#9612;</span><br />
+			<span style="">&#9600;&#9600;&#160;&#9600;&#9624;&#9624;&#9624;&#160;&#9600;&#9624;&#9624;&#160;&#9624;&#9629;&#9600;&#9624;&#9629;&#9600;&#9624;&#160;&#9624;&#9600;&#9624;&#9629;&#9600;&#160;&#9629;&#9600;&#9624;&#160;&#9600;&#160;&#9629;&#9600;&#160;</span><br />
+		</div>
 	</body>
 
 </html>
-
