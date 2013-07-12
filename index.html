@@ -16,7 +16,50 @@
 					if(command == 'test') {
 						term.echo("you typed test");
 					} else if(command == 'about') {
-						term.echo("I'm a computer engineer based out of New York City\n   with an electrical engineering background. This \n   is supplemented by an interest in UI design and \n   an extensive music career as a bassist. ");
+						term.echo("\
+							<table>\
+							<tr>\
+							<td><img src='img/headshot.jpeg' width=100px></td>\
+							<td>I'm a computer engineer based out of New York City\n\
+							with an electrical engineering background. This \n\
+							is supplemented by an interest in UI design and \n\
+							an extensive music career as a bassist.</td>\
+							</tr>\
+							</table>\
+							", {raw: true});
+					} else if(command == 'contact') {
+						term.echo("\You can email me at<br \>\
+						<span style='color= #897796'>windelicato</span> AT \
+						<span syle='color=#9f7155'>gmail.com</span><br \><br \>\
+						Or, chat with me over IRC at<br \>\
+						username: earsplit<br \>\
+						network: &#160irc.unixhub.net<br \>\
+						channel: &#160#unixhub\
+						", {raw: true});
+					} else if(command == 'links') {
+						term.echo("\
+							<table border='0'>\
+							<tr>\
+								<td><img src='img/github.png'></td>\
+								<td><a href='http://www.github.com/windelicato'>github</a></td>\
+							</tr>\
+							<tr>\
+								<td><img src='img/linkedin.png'></td>\
+								<td><a href='http://www.linkedin.com/in/billindelicato'>linkedin</a></td>\
+							</tr>\
+							<tr>\
+								<td><img src='img/reddit.png'></td>\
+								<td><a href='http://www.reddit.com/u/earsplit'>reddit</a></td>\
+							</tr>\
+							<tr>\
+								<td><img src='img/deviantart.png'></td>\
+								<td><a href='http://earspl1t.deviantart.com'>deviantart</a></td>\
+							</tr>\
+							<tr>\
+								<td><img src='img/facebook.png'></td>\
+								<td><a href='http://www.facebook.com/bill.indelicato'>facebook</a></td>\
+							</tr></table>\
+							", {raw: true});
 					} else if(command == 'help') {
 						term.echo("clear   help   about   contact   links ");
 					} else {
