@@ -24,7 +24,7 @@
     margin: 0;
     height: 1.3em;
     margin-top: 3px;
-    color: #746C48;
+    color: #d6c3b6;
 }
 .terminal .terminal-output div div, .terminal .prompt {
     display: block;
@@ -38,7 +38,7 @@
 
 .terminal {
     font-family: Drift, monospace;
-    color: #d6c3b6;
+    color: #9a875f;
     background-color: #181512;
     font-size: 12px;
     line-height: 14px;
@@ -85,8 +85,8 @@
     clear: both;
 }
 .terminal a {
-    color: #746C48;
+    color: #897796;
 }
 .terminal a:hover {
-    color: #746C48;
+    color: #897796;
 }

@@ -6,95 +6,10 @@
                 <script type="text/javascript" src="js/jquery-1.8.1.min.js"></script>
                 <script type="text/javascript" src="js/jquery-terminal.min.js"></script>
                 <script type="text/javascript" src="js/jquery-ui-1.10.3.custom.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/gameoflife.js"></script>
                 <link rel="stylesheet" type="text/css" href="js/jquery-terminal.css"/>
                 <link rel="stylesheet" type="text/css" href="js/jquery-ui-1.10.3.custom.min.css"/>
-                <script type="text/javascript">
-	
-			$(document).ready(function() {
-
-				$('#term').terminal(function(command,term) {
-					if(command == 'test') {
-						term.echo("you typed test");
-					} else if(command == 'about') {
-						term.echo("\
-							<table>\
-							<tr>\
-							<td><img src='img/headshot.jpeg' width=100px></td>\
-							<td>I'm a computer engineer based out of New York City\n\
-							with an electrical engineering background. This \n\
-							is supplemented by an interest in UI design and \n\
-							an extensive music career as a bassist.</td>\
-							</tr>\
-							</table>\
-							", {raw: true});
-					} else if(command == 'contact') {
-						term.echo("\You can email me at<br \>\
-						<span style='color= #897796'>windelicato</span> AT \
-						<span syle='color=#9f7155'>gmail.com</span><br \><br \>\
-						Or, chat with me over IRC at<br \>\
-						username: earsplit<br \>\
-						network: &#160irc.unixhub.net<br \>\
-						channel: &#160#unixhub\
-						", {raw: true});
-					} else if(command == 'links') {
-						term.echo("\
-							<table border='0'>\
-							<tr>\
-								<td><img src='img/github.png'></td>\
-								<td><a href='http://www.github.com/windelicato'>github</a></td>\
-							</tr>\
-							<tr>\
-								<td><img src='img/linkedin.png'></td>\
-								<td><a href='http://www.linkedin.com/in/billindelicato'>linkedin</a></td>\
-							</tr>\
-							<tr>\
-								<td><img src='img/reddit.png'></td>\
-								<td><a href='http://www.reddit.com/u/earsplit'>reddit</a></td>\
-							</tr>\
-							<tr>\
-								<td><img src='img/deviantart.png'></td>\
-								<td><a href='http://earspl1t.deviantart.com'>deviantart</a></td>\
-							</tr>\
-							<tr>\
-								<td><img src='img/facebook.png'></td>\
-								<td><a href='http://www.facebook.com/bill.indelicato'>facebook</a></td>\
-							</tr></table>\
-							", {raw: true});
-					} else if(command == 'help') {
-						term.echo("clear   help   about   contact   links ");
-					} else {
-						term.echo("unknown command");
-					}
-						
-				}, {
-					prompt: '» ', 
-					name:'urxvt', 
-					height:'300px',
-					width:'400px',
-					greetings:greeter
-					});
-
-				function greeter() {
-					return "Type help for list of commands ... "
-				}
-
-				function updateClock(){
-					var currentTime = new Date();
-					var currentHours = currentTime.getHours ( );
-					var currentMinutes = currentTime.getMinutes ( );
-					var currentSeconds = currentTime.getSeconds ( );
-					currentMinutes = ( currentMinutes < 10 ? "0" : "" ) + currentMinutes;
-					currentSeconds = ( currentSeconds < 10 ? "0" : "" ) + currentSeconds;
-					var timeOfDay = ( currentHours < 12 ) ? "AM" : "PM";
-					currentHours = ( currentHours > 12 ) ? currentHours - 12 : currentHours;
-					currentHours = ( currentHours == 0 ) ? 12 : currentHours;
-					var currentTimeString = currentHours + ":" + currentMinutes + ":" + currentSeconds + " " + timeOfDay;
-					document.getElementById("clock").firstChild.nodeValue = currentTimeString;
-				} setInterval(updateClock, 100);
-
-				$('.floating').draggable().resizable();
-			});
-		</script>
 	</head>
 	<body>
 		<div id="bar"> <span id="clock">&#160;</div></div>
