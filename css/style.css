@@ -8,7 +8,6 @@
 body {
 	font-family: 'Drift';
 	background-image:url('../img/bg.png');
-	color: #D3D3D3;
 	font-size: 10;
 }	
 
@@ -21,17 +20,27 @@ body {
 
 #term{
 	top: 80px;
-	left: 500px;
+	left: 100px;
 	height: 300px;
 	width: 400px;
 }
 
 #nametag{
 	top: 150px;
-	left: 100px;
+	left: 140px;
 	height:80px;
 	width: 250px;
 	color: #646a6d;
+}
+
+#gameoflife{
+	position:absolute;
+	left: 700px;
+	top: 150px;
+	height:340px;
+	width:360px;
+	color: #FFFFFF;
+	padding:0px;
 }
 
 #bar{

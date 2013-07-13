@@ -96,5 +96,8 @@ $(document).ready(function() {
 	} setInterval(updateClock, 100);
 
 	$('.floating').draggable().resizable();
+	$('#gameoflife').click(function () {
+		init(POPULATION);
+	});
 
 });
