@@ -72,7 +72,7 @@ $(document).ready(function() {
 		} else if(command == 'help') {
 			term.echo("\nabout   contact    links   clear  ls\n");
 		} else if(command == 'ls') {
-			term.echo("<br\>CNAME  <span style='color: #897796'>css</span>  <span style='color: #897796'>fonts</span>  <span style='color: #897796'>img</span>  index.html  <span style='color: #897796'>js</span><br\>", {raw: true});
+			term.echo("<br\>CNAME  <span style='color: #897796'>css</span>  <span style='color: #897796'>fonts</span>  <span style='color: #897796'>img</span>  index.html  <span style='color: #897796'>js</span><br \>", {raw: true});
 		} else if(command == 'ls -lsa') {
 			term.echo("\
 				<br\>\
