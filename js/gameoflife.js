@@ -82,9 +82,9 @@ function gameoflife() {
 
 	console.log(string);
 	$('#gameoflife').html(string);
-	for(i = 0; i < GRID_SIZE; i++) {
-		for(var j=0; j < GRID_SIZE; j++) { // TODO: see if js allows current = next;
-			current[i][j] = next[i][j];
+	for(var i = 0; i < GRID_SIZE; i++) {
+		for(var j=0; j < GRID_SIZE; j++) {
+			current[i][j]= next[i][j];
 		}
 	}
 
