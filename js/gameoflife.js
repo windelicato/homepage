@@ -64,7 +64,7 @@ function check_adjacent(x, y) {
 
 function gameoflife() {
 
-	var string = ""
+	var string = " <span style='color: #8c644c'>»</span> <span style='color: #d6c3b6'>gcc gameoflife.c -o gameoflife && ./gameoflife</span><br\><br\>"
 	for(var i = 0; i < GRID_SIZE; i++) {
 		for(var j=0; j < GRID_SIZE; j++) {
 			next[i][j] = check_adjacent(i,j);

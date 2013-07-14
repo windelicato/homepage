@@ -11,8 +11,8 @@ $(document).ready(function() {
 				with an electrical engineering background. This \n\
 				is supplemented by an interest in <span style='color: #d6c3b6'>UI design</span> and \n\
 				an extensive <span style='color: #d6c3b6'>music career</span> as a bassist.</td>\
-				</tr>\
-				</table>\
+				</tr></table>\
+				To see my portfolio and music, type <span style='color: #d6c3b6'>links</span>\
 				", {raw: true});
 		} else if(command == 'contact') {
 			term.echo("\You can email me at<br \>\
@@ -25,27 +25,42 @@ $(document).ready(function() {
 				", {raw: true});
 		} else if(command == 'links') {
 			term.echo("\
+				&#160&#160&#160&#160&#160&#160\
+<span style='text-align: center'><span style='color: #9f7155'>««</span> <span style='color: #d6c3b6'>social</span> <span style='color: #9f7155'>»»</span></span><br\>\
 				<table border='0'>\
 				<tr>\
 					<td><a href='http://www.github.com/windelicato'>github</a></td>\
 					<td><span style='color: #9f7155'>««</span> code portfolio</td>\
 				</tr>\
 				<tr>\
-					<td><a href='http://earspl1t.deviantart.com'>deviantart</a></td>\
-					<td><span style='color: #9f7155'>««</span> ui design</td>\
-				</tr>\
-				<tr>\
 					<td><a href='http://www.linkedin.com/in/billindelicato'>linkedin</a></td>\
 					<td><span style='color: #9f7155'>««</span> professionalism</td>\
+				</tr>\
+				<tr>\
+					<td><a href='http://www.facebook.com/bill.indelicato'>facebook</a></td>\
+					<td><span style='color: #9f7155'>««</span> social</td>\
 				</tr>\
 				<tr>\
 					<td><a href='http://www.reddit.com/u/earsplit'>reddit</a></td>\
 					<td><span style='color: #9f7155'>««</span> karma</td>\
 				</tr>\
+				</table><br\>\
+				&#160&#160&#160&#160&#160&#160\
+				<span style='color: #9f7155'>««</span> <span style='color: #d6c3b6'>creative</span> <span style='color: #9f7155'>»»</span><br\>\
+				<table border='0'>\
 				<tr>\
-					<td><a href='http://www.facebook.com/bill.indelicato'>facebook</a></td>\
-					<td><span style='color: #9f7155'>««</span> social</td>\
-				</tr></table>\
+					<td><a href='http://earspl1t.deviantart.com'>deviantart</a></td>\
+					<td><span style='color: #9f7155'>««</span> ui design</td>\
+				</tr>\
+				<tr>\
+					<td><a href='http://www.povertyhollow.com'>Poverty Hollow</a>\
+					<td><span style='color: #9f7155'>««</span> blackened emo jams</td>\
+				</tr>\
+				<tr>\
+					<td><a href='http://www.facebook.com/midiandthemoderndance'>M&tMD</a>\
+					<td><span style='color: #9f7155'>««</span> cathartic indie rock</td>\
+				</tr>\
+				</table>\
 				", {raw: true});
 		} else if(command == 'help') {
 			term.echo("clear   help   about   contact   links ");
