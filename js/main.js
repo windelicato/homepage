@@ -57,7 +57,7 @@ $(document).ready(function() {
 					<td><span style='color: #9f7155'>««</span> blackened emo jams</td>\
 				</tr>\
 				<tr>\
-					<td><a href='http://www.facebook.com/midiandthemoderndance'>M&tMD</a>\
+					<td><a href='http://www.facebook.com/midiandthemoderndance'>m&tmd</a>\
 					<td><span style='color: #9f7155'>««</span> cathartic indie rock</td>\
 				</tr>\
 				</table>\
