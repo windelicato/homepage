@@ -4,6 +4,7 @@ $(document).ready(function() {
 			term.echo("you typed test");
 		} else if(command == 'about') {
 			term.echo("\
+				<br\>\
 				<table>\
 				<tr>\
 				<td><img src='img/headshot.jpeg' width=100px></td>\
@@ -13,18 +14,23 @@ $(document).ready(function() {
 				an extensive <span style='color: #d6c3b6'>music career</span> as a bassist.</td>\
 				</tr></table>\
 				To see my portfolio and music, type <span style='color: #d6c3b6'>links</span>\
+				<br\>\
 				", {raw: true});
 		} else if(command == 'contact') {
-			term.echo("\You can email me at<br \>\
+			term.echo("\
+				<br\>\
+				You can email me at<br \>\
 				<span style='color: #d6c3b6'>windelicato</span> AT \
 				<span style='color: #d6c3b6'>gmail.com</span><br \><br \>\
 				Or, chat with me over IRC at<br \>\
 				username: <span style='color: #d6c3b6'>earsplit</span><br \>\
 				network: <span style='color: #d6c3b6'>&#160irc.unixhub.net</span><br \>\
 				channel: <span style='color: #d6c3b6'>&#160#unixhub</span></span>\
+				<br\>\
 				", {raw: true});
 		} else if(command == 'links') {
 			term.echo("\
+				<br\>\
 				&#160&#160&#160&#160&#160&#160\
 <span style='text-align: center'><span style='color: #9f7155'>««</span> <span style='color: #d6c3b6'>social</span> <span style='color: #9f7155'>»»</span></span><br\>\
 				<table border='0'>\
@@ -61,13 +67,15 @@ $(document).ready(function() {
 					<td><span style='color: #9f7155'>««</span> cathartic indie rock</td>\
 				</tr>\
 				</table>\
+				<br\>\
 				", {raw: true});
 		} else if(command == 'help') {
-			term.echo("clear   help   about   contact   links ");
+			term.echo("\nabout   contact    links   clear  ls\n");
 		} else if(command == 'ls') {
-			term.echo("CNAME  <span style='color: #897796'>css</span>  <span style='color: #897796'>fonts</span>  <span style='color: #897796'>img</span>  index.html  <span style='color: #897796'>js</span>", {raw: true});
+			term.echo("<br\>CNAME  <span style='color: #897796'>css</span>  <span style='color: #897796'>fonts</span>  <span style='color: #897796'>img</span>  index.html  <span style='color: #897796'>js</span><br\>", {raw: true});
 		} else if(command == 'ls -lsa') {
 			term.echo("\
+				<br\>\
 				total 48<br \>\
 				 4 drwxr-xr-x  7 windelicato users  4096 Jul 12 19:30 .<br \>\
 				 4 drwx------  6 windelicato users  4096 Jul 10 08:28 ..<br \>\
@@ -78,9 +86,10 @@ $(document).ready(function() {
 				 4 drwxr-xr-x  2 windelicato users  4096 Jul 11 20:02 img<br \>\
 				 4 -rw-r--r--  1 windelicato users  2367 Jul 12 19:30 index.html<br \>\
 				 4 drwxr-xr-x  2 windelicato users  4096 Jul 12 19:43 js<br \>\
+				<br\>\
 			", {raw: true});
 		} else {
-			term.echo( command + " not found. Type <span style='color:#D6C3B6'>help</span> for command list"
+			term.echo( "<br\>" + command + " not found. Type <span style='color:#D6C3B6'>help</span> for command list <br\>"
 			,{raw: true});
 		}
 			
