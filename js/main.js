@@ -32,7 +32,7 @@ $(document).ready(function() {
 			term.echo("\
 				<br\>\
 				&#160&#160&#160&#160&#160&#160\
-<span style='text-align: center'><span style='color: #9f7155'>««</span> <span style='color: #d6c3b6'>social</span> <span style='color: #9f7155'>»»</span></span><br\>\
+<span style='color: #9f7155'>┌──</span> <span style='color: #d6c3b6'>social</span> <span style='color: #9f7155'>──┐</span><br\>\
 				<table border='0'>\
 				<tr>\
 					<td><a href='http://www.github.com/windelicato'>github</a></td>\
@@ -52,7 +52,7 @@ $(document).ready(function() {
 				</tr>\
 				</table><br\>\
 				&#160&#160&#160&#160&#160&#160\
-				<span style='color: #9f7155'>««</span> <span style='color: #d6c3b6'>creative</span> <span style='color: #9f7155'>»»</span><br\>\
+<span style='color: #9f7155'>┌──</span> <span style='color: #d6c3b6'>creative</span> <span style='color: #9f7155'>──┐</span><br\>\
 				<table border='0'>\
 				<tr>\
 					<td><a href='http://earspl1t.deviantart.com'>deviantart</a></td>\
@@ -72,7 +72,7 @@ $(document).ready(function() {
 		} else if(command == 'help') {
 			term.echo("\nabout   contact    links   clear  ls\n");
 		} else if(command == 'ls') {
-			term.echo("<br\>CNAME  <span style='color: #897796'>css</span>  <span style='color: #897796'>fonts</span>  <span style='color: #897796'>img</span>  index.html  <span style='color: #897796'>js</span><br \>", {raw: true});
+			term.echo("<br\>CNAME  <span style='color: #897796'>css</span>  <span style='color: #897796'>fonts</span>  <span style='color: #897796'>img</span>  index.html  <span style='color: #897796'>js</span><br><br>", {raw: true});
 		} else if(command == 'ls -lsa') {
 			term.echo("\
 				<br\>\
