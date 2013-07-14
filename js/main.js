@@ -14,7 +14,7 @@ $(document).ready(function() {
 				an extensive <span style='color: #d6c3b6'>music career</span> as a bassist.</td>\
 				</tr></table>\
 				To see my portfolio and music, type <span style='color: #d6c3b6'>links</span>\
-				<br\>\
+				<br><br>\
 				", {raw: true});
 		} else if(command == 'contact') {
 			term.echo("\
@@ -26,7 +26,7 @@ $(document).ready(function() {
 				username: <span style='color: #d6c3b6'>earsplit</span><br \>\
 				network: <span style='color: #d6c3b6'>&#160irc.unixhub.net</span><br \>\
 				channel: <span style='color: #d6c3b6'>&#160#unixhub</span></span>\
-				<br\>\
+				<br><br>\
 				", {raw: true});
 		} else if(command == 'links') {
 			term.echo("\
