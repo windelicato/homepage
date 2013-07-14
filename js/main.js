@@ -38,7 +38,7 @@ $(document).ready(function() {
 				</tr>\
 				<tr>\
 					<td><a href='http://www.facebook.com/bill.indelicato'>facebook</a></td>\
-					<td><span style='color: #9f7155'>««</span> social</td>\
+					<td><span style='color: #9f7155'>««</span> (meta) real life</td>\
 				</tr>\
 				<tr>\
 					<td><a href='http://www.reddit.com/u/earsplit'>reddit</a></td>\
