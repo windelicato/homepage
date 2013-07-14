@@ -22,9 +22,11 @@ body {
 	background-color: #181512;
 	box-shadow: 5px 5px 10px #181512;
 	padding: 10px;
+	font-size: 12px;
 }
 
 #term{
+	position: absolute;
 	top: 80px;
 	left: 100px;
 	height: 300px;
@@ -32,7 +34,8 @@ body {
 }
 
 #nametag{
-	top: 150px;
+	position: absolute;
+	top: 500px;
 	left: 140px;
 	height:80px;
 	width: 275px;
@@ -40,9 +43,9 @@ body {
 }
 
 #gameoflife{
-	position:absolute;
-	left: 700px;
+	position: absolute;
 	top: 150px;
+	left: 700px;
 	color: #d6c3b6;
 }
 
