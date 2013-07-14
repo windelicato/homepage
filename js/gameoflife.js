@@ -5,6 +5,8 @@ var GRID_SIZE = 30;
 var current = new Array(GRID_SIZE);
 var next = new Array(GRID_SIZE);
 
+var colors = new Array("#332d29" ,"#817267" ,"#8c644c" ,"#9f7155" ,"#746C48" ,"#8F8558" ,"#bfba92" ,"#E0DAAC" ,"#646a6d" ,"#777E82" ,"#6d6871" ,"#756f7b" ,"#766782" ,"#897796" ,"#3b484a" ,"#444d4e" ,"#4B5C5E" ,"#556D70" ,"#504339" ,"#9a875f") 
+
 // Set up the board with random items
 function init(num) {
 	current = new Array(GRID_SIZE);
@@ -69,7 +71,8 @@ function gameoflife() {
 		for(var j=0; j < GRID_SIZE; j++) {
 			next[i][j] = check_adjacent(i,j);
 			if ( current[i][j] ) {
-				string+=".&#160";
+				var ncolor = Math.floor(Math.random()*colors.length);
+				string+="<span style='color: " + colors[ncolor] + "'>■</span>&#160";
 			} else {
 				string+="&#160&#160";
 			}
