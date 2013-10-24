@@ -70,7 +70,7 @@ $(document).ready(function() {
 				<br\>\
 				", {raw: true});
 		} else if(command == 'help') {
-			term.echo("\nabout   contact    links   clear  ls\n");
+			term.echo("\nabout   contact    links   clear  pgp   ls\n");
 		} else if(command == 'ls') {
 			term.echo("<br\>CNAME  <span style='color: #897796'>css</span>  <span style='color: #897796'>fonts</span>  <span style='color: #897796'>img</span>  index.html  <span style='color: #897796'>js</span><br><br>", {raw: true});
 		} else if(command == 'ls -lsa') {
@@ -88,6 +88,10 @@ $(document).ready(function() {
 				 4 drwxr-xr-x  2 windelicato users  4096 Jul 12 19:43 js<br \>\
 				<br\>\
 			", {raw: true});
+		} else if(command == 'pgp') {
+			term.echo("\
+					<br><a href='./pgp.txt'>my pgp key</a><br><br>\
+					", {raw:true});
 		} else {
 			term.echo( "<br\>" + command + " not found. Type <span style='color:#D6C3B6'>help</span> for command list <br\>"
 			,{raw: true});
