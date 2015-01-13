@@ -80,7 +80,6 @@ function gameoflife() {
 		string+="<br\>"
 	}
 
-	console.log(string);
 	$('#gameoflife').html(string);
 	for(var i = 0; i < GRID_SIZE; i++) {
 		for(var j=0; j < GRID_SIZE; j++) {

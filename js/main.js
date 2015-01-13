@@ -24,8 +24,8 @@ $(document).ready(function() {
 				<span style='color: #d6c3b6'>gmail.com</span><br \><br \>\
 				Or, chat with me over IRC at<br \>\
 				username: <span style='color: #d6c3b6'>earsplit</span><br \>\
-				network: <span style='color: #d6c3b6'>&#160irc.unixhub.net</span><br \>\
-				channel: <span style='color: #d6c3b6'>&#160#unixhub</span></span>\
+				network: <span style='color: #d6c3b6'>&#160irc.freenode.net</span><br \>\
+				channel: <span style='color: #d6c3b6'>&#160#bspwm</span></span>\
 				<br><br>\
 				", {raw: true});
 		} else if(command == 'links') {
@@ -93,7 +93,7 @@ $(document).ready(function() {
 					<br><a href='./pgp.txt'>my pgp key</a><br><br>\
 					", {raw:true});
 		} else {
-			term.echo( "<br\>" + command + " not found. Type <span style='color:#D6C3B6'>help</span> for command list <br\>"
+			term.echo( "<br\>Command not found. Type <span style='color:#D6C3B6'>help</span> for command list <br\>"
 			,{raw: true});
 		}
 			
