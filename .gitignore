@@ -5,3 +5,4 @@ npm-debug.log
 .sass-cache
 _site
 
+*.swp
