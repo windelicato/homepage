@@ -1,5 +1,5 @@
 var windelicato = function() {
-    $(function() {
+    $(document).ready(function() {
         homepage.initialize();
         terminal.initialize();
         gameoflife.initialize();
