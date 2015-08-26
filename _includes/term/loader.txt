@@ -1,0 +1,23 @@
+ »  grunt                                            ~/bin/windelicato.github.io.jekyll
+Running "copy:jquery" (copy) task
+Copied 1 file
+
+Running "copy:bootstrap" (copy) task
+Copied 2 files
+
+Running "copy:rrssb" (copy) task
+Copied 31 files
+
+Running "exec:jekyll" (exec) task
+Configuration file: /Users/windelicato/bin/windelicato.github.io.jekyll/_config.yml
+            Source: /Users/windelicato/bin/windelicato.github.io.jekyll
+       Destination: /Users/windelicato/bin/windelicato.github.io.jekyll/_site
+      Generating... 
+                    done.
+ Auto-regeneration: disabled. Use --watch to enable.
+
+Running "connect:server" (connect) task
+Started connect web server on http://localhost:4000
+
+Running "watch" task
+Waiting...

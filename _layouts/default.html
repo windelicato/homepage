@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <script src="/vendor/js/jquery.min.js"></script>
+  <script src="/vendor/js/bootstrap.min.js"></script>
+  <script src="/vendor/js/jquery.terminal-min.js"></script>
+  <script src="/js/gameoflife.js"></script>
+  <script src="/js/terminal.js"></script>
+  <script src="/js/main.js"></script>
+
+  <body>
+
+    {% include header.html %}
+
+    <div class="gameoflife-container">
+	    <div id="gameoflife" data-population="300" data-height="20" data-width="40"></div>
+    </div>
+    <div class="page-content">
+      <div class="wrapper">
+        {{ content }}
+      </div>
+    </div>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>

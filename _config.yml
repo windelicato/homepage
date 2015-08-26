@@ -1,0 +1,63 @@
+# Site settings
+title: bill indelicato
+email: windelicato@gmail.com
+description: >
+        Hub for Austin, TX based engineer, musician, and designer Bill Indelicato. Under construction.
+#baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://windelicato.com" # the base hostname & protocol for your site
+
+social:
+  mouth:
+    github:
+      link: "http://www.github.com/windelicato"
+      desc: "code portfolio"
+    linkedin:
+      link: "http://www.linkedin.com/in/billindelicato"
+      desc: "professionalism"
+    facebook:
+      link: "http://www.facebook.com/bill.indelicato"
+      desc: "(meta) real life"
+    reddit:
+      link: "http://www.reddit.com/u/earsplit"
+      desc: "karma pile"
+  eyes:
+    instagram:
+      link: "http://www.instagram.com/earsplitt"
+      desc: "filtered snaps"
+    flickr:
+      link: "http://www.instagram.com/earsplitt"
+      desc: "35mm rolls"
+    tumblr:
+      link: "http://earsplit.tumblr.com"
+      desc: "tumblr"
+  ears:
+    soundcloud:
+      link: "http://www.soundcloud.com/earsplitt"
+      desc: "riffs and drones"
+    oozer:
+      link: "http://www.facebook.com/oozeratx"
+      desc: "sludgepop"
+    povertyhollow:
+      link: "http://www.facebook.com/povertyhollow"
+      desc: "blackened emo"
+    m&tmd:
+      link: "http://www.facebook.com/midiandthemoderndance"
+      desc: "cathartic indie rock"
+    suns:
+      link: "http://www.facebook.com/sunsmusic"
+      desc: "angsty pop punk"
+
+commands: [
+        "ls",
+        "about",
+        "contact",
+        "links",
+        "help",
+        "clear"
+]
+
+# Build settings
+markdown: kramdown
+
+include: [".nojekyll"]
+exclude: ["bower_componenets", "bower.json", "node_modules", "package.json", "Gruntfile.coffee"]

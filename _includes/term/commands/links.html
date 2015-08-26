@@ -1,0 +1,12 @@
+{% for link_category in site.social %}
+	<div class="link-header">┌── <b>{{ link_category[0] }}</b>──┐</div>
+	<table border='0'>
+
+	{% for link in link_category[1] %}
+		<tr>
+			<td><a href='{{ link[1].link }}'>{{ link[0] }}</a></td>
+			<td><b>««</b></span>{{ link[1].desc }}</b>
+		</tr>
+	{% endfor %}
+	</table>
+{% endfor %}

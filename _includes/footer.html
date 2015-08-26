@@ -1,0 +1,35 @@
+<footer class="site-footer">
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-1">
+        <ul class="contact-list">
+          <li>{{ site.title }}</li>
+          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-2">
+      </div>
+
+      <div class="footer-col  footer-col-3">
+        <ul class="social-media-list">
+          {% for contact in site.social.mouth %}
+                <li>
+                  <a href="{{ contact[1].link }}">
+	            <span class="icon icon--{{ contact[0] }}">
+                          {% assign name = contact[0] %}
+                          {% include icons/{{name}}.min.svg %}
+		    </span>
+                    <span class="name">{{ contact[0] }}</span>
+                  </a>
+                </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+</footer>

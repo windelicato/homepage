@@ -1,0 +1,20 @@
+{
+  "name": "windelicato.github.io.jekyll",
+  "version": "0.0.0",
+  "authors": [
+    "Bill Indelicato <windelicato@gmail.com>"
+  ],
+  "description": "Personal webpage",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "jquery.terminal": "~0.8.8"
+  }
+}
