@@ -33,12 +33,11 @@ var terminal = function () {
                     _handleTerminalInput(cmd, term);
                 }
                 term.echo("\n");
-                return term;
             },
             {
                 prompt: '» ',
                 name:'urxvt',
-                height:'700px',
+                width:'100%',
                 greetings: ''
             }
         );

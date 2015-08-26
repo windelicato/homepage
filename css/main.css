@@ -165,7 +165,8 @@ td {
  */
 .terminal {
   background-color: #fdfdfd;
-  color: #111; }
+  color: #111;
+  overflow: auto; }
   .terminal .cmd {
     background-color: #fdfdfd;
     color: #111; }
@@ -178,6 +179,9 @@ td {
     color: #111;
     border: 0px;
     padding: 0px 0px; }
+
+.avatar {
+  max-width: none; }
 
 .console {
   height: 500px; }
