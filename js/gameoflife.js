@@ -17,8 +17,6 @@ var gameoflife = function () {
         GRID_WIDTH = $('#gameoflife').attr('data-width');
         GRID_SIZE = GRID_HEIGHT*GRID_WIDTH;
 
-        console.log($('.page-content').height());
-
         _populate();
         setInterval(_run, 150);
 
