@@ -230,6 +230,7 @@ td {
 .terminal {
     background-color: $background-color;
     color: $text-color;
+    overflow: auto;
     .cmd {
         background-color: $background-color;
         color: $text-color;
@@ -245,6 +246,11 @@ td {
         border: 0px;
         padding: 0px 0px;
     }
+
+}
+
+.avatar {
+    max-width:none;
 }
 
 .console {
